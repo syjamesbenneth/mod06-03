@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<title>Loops</title>
+
+	<span id="result"></span>
+
+	</head>
+		<body>
+
+			<script>
+				//for loop
+				// for (day = 1; day < 13; day++) {
+				// 	switch (day) {
+				// 		case 1: 
+				// 		... //continue this
+				// 	}
+				// 	document.getElementById('result').innerHTML += "On the " + ... + "day of Christmas...";
+				// }
+
+				//Instructor's solution
+				for (day = 1; day < 13; day++) {
+				let daySuffix = "";
+					switch (day) {
+						case 1: 
+						daySuffix = day + "st ";
+							break;
+							case 2: 
+						daySuffix = day + "nd ";
+							break;
+							case 3: 
+						daySuffix = day + "rd ";
+							break;
+							default:
+						daySuffix = day + "th ";
+							break;
+
+					}
+					document.getElementById('result').innerHTML += "On the " + daySuffix + "day of Christmas...<br>";
+				}
+			</script>
+			
+		</body>
+
+
+
+		
+
+
+</html>
+</head>

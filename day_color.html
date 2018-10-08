@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+	
+	<!-- <script type="text/javascript" src="./assets/js/script.js"></script> -->
+
+	<title>Switch Cases</title>
+</head>
+<body>
+	<label for="day">Enter day:</label>
+	<input type="text" name="day" id="day">
+	<button onclick="getDay()">Get day</button>
+	<br>
+	<span id="result"></span>
+
+	
+	<script type="text/javascript">
+		const getDay=()=> {
+	//input
+	let day = document.getElementById('day').value;
+	let str = day.toUpperCase();
+
+		switch (str) {
+			case "SUNDAY":
+			document.getElementById('result').innerHTML = "red";
+			document.body.style.backgroundColor = "red";
+			break;
+
+			case "MONDAY":
+			document.getElementById('result').innerHTML = "orange";
+			document.body.style.backgroundColor = "orange";
+			break;
+
+			case "TUESDAY":
+			document.getElementById('result').innerHTML = "yellow";
+			document.body.style.backgroundColor = "yellow";
+			break;
+
+			case "WEDNESDAY":
+			document.getElementById('result').innerHTML = "green";
+			document.body.style.backgroundColor = "green";
+			break;
+
+			case "THURSDAY":
+			document.getElementById('result').innerHTML = "blue";
+			document.body.style.backgroundColor = "blue";
+			break;
+
+			case "FRIDAY":
+			document.getElementById('result').innerHTML = "indigo";
+			document.body.style.backgroundColor = "indigo";
+			break;
+
+			case "SATURDAY":
+			document.getElementById('result').innerHTML = "violet";
+			document.body.style.backgroundColor = "violet";
+			break;
+		}
+	}
+	</script>
+</body>
+</html>

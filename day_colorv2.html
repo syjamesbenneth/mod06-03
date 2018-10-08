@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>	
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width">
+	<meta http-equiv="X-UA-Compatible" content="IE-Edge">
+	<link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+	<title>Switch Cases</title>
+</head>
+<body>
+	<label for="day">Enter day:</label>
+	<input type="text" name="day" id="day">
+	<button onclick="getColor()">Get color</button>
+	<br>
+	<span id="result"></span>
+
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      
+		<script>
+		const getColor = () => {
+			let day = document.getElementById('day').value;
+			let processedDay = day.LowerCase();
+			//what does this do? It changes the string into lowercase. ex. MonDaY-> monday
+			switch (processedDay) {
+				case "sunday":
+					document.body.style.backgroundColor = "red";
+					//document.getElementById('body')...
+					//put an Id to the body
+					break;
+				case "monday":
+					document.body.style.backgroundColor = "yellow";
+					break;
+				case "tuesday":
+					document.body.style.backgroundColor = "orange";
+
+					case "wednesday":
+					document.body.style.backgroundColor = "green";
+					break;
+
+					case "thursday":
+					document.body.style.backgroundColor = "blue";
+					break;
+
+					case "friday":
+					document.body.style.backgroundColor = "indigo";
+					break;
+
+					case "saturday":
+					document.body.style.backgroundColor = "violet";
+					break;
+				default:
+					alert("Invalid day");
+					document.body.style.backgroundColor = "white";
+			}
+		}
+		</script>
+</body>
+</html>

@@ -1,0 +1,155 @@
+switch (variable/condition) {
+	case "value":
+	do if value is same;
+	break;
+	case "value2":
+	do if value is same;
+	break;
+	...
+	default:
+	do if no other value;
+}
+
+
+
+xxx
+1. Create a number field and a button
+2. When a button is clicked, determine the position using a switch statement
+-Input: 1, output: "On the 1st day of Christmas"
+-Input: 4, output: "On the 4th day of Christmas."
+3. Place the output inside a span
+Stretch goal
+1. Only allow 1 to 12 as input.
+
+xxx
+1. Create a new file caled day_color.html
+2. Create a button and text field
+3. When button is clicked, check the content of the text field and match the day to its color
+sunday: red
+monday: orange
+tuesday: yellow
+wednesday: green
+thursday: blue
+friday: indigo
+saturday: violet
+Stretch goals:
+1. Change the color of the background to the matching color instead of just outputting text.
+2. User should be able to input any form of the word for the day ex Monday, MONDAY or monday-> orange
+
+xxx 
+
+while loop
+syntax:
+*initialization
+while (condition/s) {
+	do as long as condition/s is/are true.
+	increment/decrement of condition
+}
+}
+xxx
+
+*use a span and a while loop to print your name 10 times
+
+xxx
+
+*use another span and a while loop to display 1 to 15;
+
+xxx
+
+do-while loop.
+syntax:
+initialization
+do {
+	do while conditions are true
+	increment/decrement
+} while (condition/s)
+
+xxx
+
+*use another span ad a do while loop display one of your rowmate's name 8 times.
+
+
+xxx
+while loop and do while loop difference
+*while loop checks conditions first before doing the loop body, do-while loop checks condition AFTER doing the loop body.
+
+xxx
+for loop.
+syntax:
+for (initialization; condition; increment/decrement) {
+	do something here.
+}
+
+xxx
+
+loop and if else
+alert the following
+number is 1, number is 2, number is 3 number is 8 number is 9, number is 10
+
+xxx
+1.create a file called loop_print.html
+2.create a js file called loop_print.js
+3.in the html file, create 3 spans 
+4.using loop_print.js, do the following:
+5.using a while loop and an if statement, print all odd numbers from 1 to 20
+
+xxx
+6.using a for loop and an if statement
+7.print all multiples of 3 from 1 to 20
+8.label each section
+
+xxx
+solution
+
+//while loop
+let while_counter = 1:
+while (while_counter <= 20) {
+	if(while_counter %2 == 0){
+	document.getElementById('while') += while_counter + "<br>";
+	}
+	while_counter++
+}
+
+//do-while loop
+while_counter = 1;
+do {
+	if(while_counter % 2 1= 0) {
+	document.getElementById('while').innerHTML += while_counter + "<br>";
+	}
+	while_counter++;
+} while (while_counter<=20);
+
+//for loop
+
+for (i=1;i < 21;ii++) {
+						
+			 if (i%3==0) {
+			 	document.getElementById('result3').innerHTML += i + "<br>";
+			 }
+		}
+
+xxxxx
+
+1. create a new file named lyrics2.html
+2. using a loop and a switch case, print the following:
+3.on the 1st day of Christmas, my true love sent to me
+4. On the 2nd day of Christmas, my true love sent to me
+5. On the 3rd day of Christmas,.. to 12th
+
+xxx
+
+Using continue in loops
+for numbers where i 0 to 9
+if i is even skip to the next i
+then add i to the current total
+
+var value = 0;
+for (i = 0; i < 10; i++) {
+	if (i % 2 == 0) {
+	continue
+	}
+	value = value + i;
+}
+alert (value);
+
+
